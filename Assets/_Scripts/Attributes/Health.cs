@@ -4,7 +4,6 @@ using Overloading.Saving;
 using Overloading.Stats;
 using UnityEngine;
 using UnityEngine.Events;
-using System;
 
 namespace Overloading.Attributes
 {

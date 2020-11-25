@@ -1,5 +1,6 @@
 using System;
 using Overloading.Saving;
+using Overloading.UI.ExpText;
 using UnityEngine;
 
 namespace Overloading.Stats
@@ -14,6 +15,8 @@ namespace Overloading.Stats
         {
             experiencePoints += experience;
             onExperienceGained();
+            EXPTextSpawner expTextSpawner = FindObjectOfType<EXPTextSpawner>().GetComponent<EXPTextSpawner>();
+            expTextSpawner.Spawn(experience);
         }
 
         public float GetPoints()
